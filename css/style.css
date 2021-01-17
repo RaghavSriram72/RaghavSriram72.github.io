@@ -1080,6 +1080,7 @@ section.home.light .social-icons li a:hover {
   position: absolute;
   top: 60px;
 }
+
 .portfolio-item .details span.term {
   color: #fff;
   background: #ff4c60;
@@ -1679,7 +1680,7 @@ select.portfolio-filter-mobile {
 --------------------------------------------------------------*/
 .testimonials {
   padding: 170px 0;
-  background: url("https://cdn.pixabay.com/photo/2016/11/19/14/00/code-1839406_960_720.jpg")
+  background: url("https://cdn.pixabay.com/photo/2016/11/30/20/58/programming-1873854_960_720.png")
     no-repeat;
   background-position: center center;
   background-size: cover;
