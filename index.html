@@ -629,31 +629,47 @@
 
 				<div class="col-md-8">
 					<!-- Contact Form -->
-					<form action="contact.php" method="post" class="php-email-form">
-              <div class="form-row">
-                <div class="col-md-6 form-group">
-                  <input id="firstnamec" type="text" name="firstname" placeholder="Your Name" data-rule="minlen:4"
-                    data-msg="Please enter at least 4 chars" />
-                  <div class="validate"></div>
-                </div>
-                <div class="col-md-6 form-group">
-                  <input type="Email" id="emailc" name="email" placeholder="Your Email" data-rule="email"
-                    data-msg="Please enter a valid email" />
-                  <div class="validate"></div>
-                </div>
-              </div>
-              <div class="form-group">
-                <input type="text" id="subjectc" name="subject" placeholder="Subject" data-rule="minlen:4"
-                  data-msg="Please enter at least 8 chars of subject" />
-                <div class="validate"></div>
-              </div>
-              <div class="form-group">
-                <textarea name="message" id="message" rows="5" data-rule="required"
-                  data-msg="Please write something for us" placeholder="Message"></textarea>
-              </div>
-              <div class="text-center"><button style="color:white" type="submit" class="submity" name="submit"
-                  class="btn_email">Send Message</button></div>
-            </form>
+					<form id="contact-form" class="php-email-form" method="post" action="contact.php">
+						
+						<div class="messages"></div>
+						
+						<div class="row">
+							<div class="column col-md-6">
+								<!-- Name input -->
+								<div class="form-group">
+									<input type="text" class="form-control" name="firstname" id="firstname" placeholder="Your name" required="required" data-error="Name is required.">
+									<div class="help-block with-errors"></div>
+								</div>
+							</div>
+							
+							<div class="column col-md-6">
+								<!-- Email input -->
+								<div class="form-group">
+									<input type="email" class="form-control" id="email" name="email" placeholder="Email address" required="required" data-error="Email is required.">
+									<div class="help-block with-errors"></div>
+								</div>
+							</div>
+
+							<div class="column col-md-12">
+								<!-- Email input -->
+								<div class="form-group">
+									<input type="text" class="form-control" id="subject" name="subject" placeholder="Subject" required="required" data-error="Subject is required.">
+									<div class="help-block with-errors"></div>
+								</div>
+							</div>
+					
+							<div class="column col-md-12">
+								<!-- Message textarea -->
+								<div class="form-group">
+									<textarea name="message" id="message" class="form-control" rows="5" placeholder="Message" required="required" data-error="Message is required."></textarea>
+									<div class="help-block with-errors"></div>
+								</div>
+							</div>
+						</div>
+            <div class="text-center">
+              <button name="submit"  id="submit" value="Submit" class="btn btn-default" type="submit">Send Message</button>
+            </div>
+          </form>
           <br><br><br>
 					<!-- Contact Form end -->
 				</div>
