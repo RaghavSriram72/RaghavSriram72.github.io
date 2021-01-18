@@ -1056,7 +1056,10 @@ section.home.light .social-icons li a:hover {
   overflow: hidden;
 }
 .portfolio-item .thumb {
+border-radius: 10px;
   overflow: hidden;
+  max-height:  410px;
+  position:relative;
 }
 .portfolio-item .details {
   color: #fff;
