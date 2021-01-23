@@ -1984,7 +1984,7 @@ select.portfolio-filter-mobile {
   -webkit-transition: background-color 0.2s ease-in-out;
   -ms-transition: background-color 0.2s ease-in-out;
   transition: color .2s ease-in-out;
-  background: linear-gradient(to right, #505364,#7E676E,#7B696F);
+  background: linear-gradient(to left,#ffffff, rgb(237, 93, 123), #d65483);
   animation: rainbow 2s ease-in-out infinite;
   -moz-align-items: center;
   -webkit-align-items: center;
@@ -2011,7 +2011,7 @@ select.portfolio-filter-mobile {
   }
 
     #footer a:hover {
-      color: #b9babb;
+      color: #353353;
     }
 
   #footer ul.menu {
