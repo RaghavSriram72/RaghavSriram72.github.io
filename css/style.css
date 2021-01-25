@@ -2000,6 +2000,11 @@ select.portfolio-filter-mobile {
   padding: 1.5em;
   overflow: hidden;
   color: white;
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
   #footer > * {
@@ -2061,7 +2066,6 @@ select.portfolio-filter-mobile {
       }
 
   }
-
 /*=================================================================*/
 /*                      DARK MODE                              
 /*=================================================================*/
